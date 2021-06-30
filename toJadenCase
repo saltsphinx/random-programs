@@ -1,0 +1,13 @@
+#Javascript
+function toJadanCase (string) {
+ return string.split(" ").map(word => {
+    let wordArray = word.split("")
+    wordArray[0] = wordArray[0].toUpperCase()
+    return wordArray.join("")
+ }).join(" ")
+}
+
+#Ruby
+def to_jaden_case
+    String.split(" ").map(&:capitalize).join(" ")
+end
